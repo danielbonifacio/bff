@@ -1,0 +1,13 @@
+import { ModuleResponse } from '@interfaces'
+import { Controller } from '@classes'
+
+class Greet extends Controller {
+  public handle = async (): Promise<ModuleResponse> => {
+    this.status = 200
+    this.data = { message: 'hi!' }
+
+    return this.respond()
+  }
+}
+
+export const greet = new Greet()

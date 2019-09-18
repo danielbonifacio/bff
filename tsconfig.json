@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./src",
+    "paths": {
+      "@sdk/*": ["_sdk/*"],
+      "@shims": ["shims/index"],
+      "@modules/*": ["modules/*"],
+      "@classes": ["classes/index"],
+      "@services/*": ["services/*"],
+      "@interfaces": ["interfaces/index"],
+      "@config": ["config"],
+      "@middlewares/*": ["middlewares/*"],
+      "@routes": ["routes"]
+    },
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "experimentalDecorators": true,
+    "outDir": "./dist",
+    "target": "es6"
+  },
+  "exclude": [
+    "node_modules"
+  ],
+  "include": [
+    "./src/**/*"
+  ]
+}
