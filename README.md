@@ -1,9 +1,10 @@
 <center>
-  <img src="./docs/img/logo.svg" alt="valor" width="200"/>
+  <img src="./bff.svg" alt="bff" />
 </center>
 
+Apenas um estudo de adaptação do valor para criar BFFs
 
-Boilerplate utilizado pelo [teemprego.com.br](https://teemprego.com.br).
+<!-- Boilerplate utilizado pelo [teemprego.com.br](https://teemprego.com.br). -->
 
 Procurando pela documentação?
 
