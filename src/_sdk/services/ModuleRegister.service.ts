@@ -46,8 +46,14 @@ class ModuleRegisterService {
 
   private async documentation (res: Response, endpoint: Endpoint): Promise<Response> {
     try {
-      return res.send(endpoint)
+      return res.send({
+        path: endpoint.path,
+        description: endpoint.description,
+        parameters: endpoint.parameters,
+        method: endpoint.method
+      })
     } catch (err) {
+      console.log('error on documentation')
       return res.status(500).send({ message: err.message })
     }
   }
