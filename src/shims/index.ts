@@ -4,7 +4,7 @@ import Users from './backoffice/users'
 
 const shims = Router()
 
-shims.use('/backoffice', Proposal)
+shims.use('/proposals', Proposal)
 shims.use('/users', Users)
 
 export default shims
